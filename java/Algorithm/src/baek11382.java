@@ -6,10 +6,10 @@ public class baek11382 {
         Scanner scanner = new Scanner(System.in);
         String a = scanner.nextLine();
         String[] stChange = a.split(" ");
-        int total = 0;
+        long total = 0;
 
-        for (int i = 0; i < stChange.length; i++){
-            total += Integer.parseInt(stChange[i]);
+        for (long i = 0; i < stChange.length; i++){
+            total += Long.parseLong(stChange[Math.toIntExact(i)]);
         }
 
         System.out.println(total);
